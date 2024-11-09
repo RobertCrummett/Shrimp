@@ -222,13 +222,9 @@ with open(bible_tex_path, "w") as tex:
         text = text.replace("]", "}")
 
         # Add tetragrammaton
-        text = text.replace("KING'S", "\\textsc{King's}")
-        text = text.replace("KINGS", "\\textsc{Kings}")
-        text = text.replace("KING", "\\textsc{King}")
         text = text.replace("LORD'S", "\\textsc{Lord's}")
         text = text.replace("LORDS", "\\textsc{Lords}")
         text = text.replace("LORD", "\\textsc{Lord}")
-        text = text.replace(" OF ", " of ")
 
         bookchapterverse = book + chapter + verse
         tex.write("\\newcommand{\\Bible" + \
