@@ -207,7 +207,7 @@ with open(bible_tex_path, "w") as tex:
     tex.write("% --------------------------\n")
     tex.write("%     KJV bible verses\n")
     tex.write("%\n")
-    tex.write("% Source: https://openbible.com/textfiles/kjv.txt\n")
+    tex.write(f"% Source: {bible_text_url}\n")
     tex.write(f"% Written: {datetime.date.today()}\n")
     tex.write("% --------------------------\n\n")
 
